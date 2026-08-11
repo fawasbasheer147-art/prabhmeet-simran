@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Engagement Invitation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- Confetti Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        window.onerror = function (msg, url, lineNo, columnNo, error) {
+            alert("Error: " + msg + " (Line " + lineNo + ")");
+            return false;
+        };
+    </script>
+
+    <!-- SEO & Social Media Meta Tags -->
+    <meta name="description" content="With joy in our hearts, we invite you to celebrate our wedding.">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://prabhmeet-simran.vercel.app/">
+    <meta property="og:title" content="Wedding Invitation | Prabhmeet Singh & Simran Kaur Bains ">
+    <meta property="og:description" content="With joy in our hearts, we invite you to celebrate our wedding.">
+    <meta property="og:image" content="https://prabhmeet-simran.vercel.app/assests/images/cover.png">
+</head>
+
+<body>
+    <audio id="bgMusic" loop>
+        <source src="assests/audio/music1.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicToggle" class="music-toggle" aria-label="Toggle music">
+        <iconify-icon icon="lucide:volume-x" id="musicIcon" style="font-size: 20px; color: var(--text-primary); display: flex; align-items: center; justify-content: center;"></iconify-icon>
+    </button>
+
+    <section class="hero-section">
+        <div class="video-container">
+
+      <img id="videoPoster"
+         src="assests/images/first.png"
+         class="video-placeholder">
+
+    <video id="curtainVideo" playsinline webkit-playsinline preload="auto">
+        <source src="assests/videos/nadavd.mp4" type="video/mp4">
+    </video>
+
+    <div id="playOverlay" class="overlay">
+        <div class="play-button">
+            <iconify-icon icon="majesticons:hand-click-line" class="hand-icon"></iconify-icon>
+        </div>
+        <p class="tap-text">Open Invitation</p>
+    </div>
+
+</div>
+    </section>
+
+    <!-- Next Page Section -->
+    <section class="details-section" id="detailsSection">
+        <img src="assests/images/topf.png" class="topf-image" alt="Top Decoration">
+        <img src="assests/images/light.png" class="light-image" alt="Light Decoration">
+
+        <div class="content-wrapper scroll-animate">
+            <div style="min-height: 177.7vw; padding-top: 260px; padding-bottom: 30px; text-align: center; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
+                <div>
+                    <p class="small-text tracking-wide" style="margin-bottom: 15px;">TOGETHER WITH <br>THEIR FAMILIES</p>
+                    <h1 class="names" style="font-size: 1.8rem;">Prabhmeet Singh<br><span class="ampersand">-♡-</span><br>Simran Kaur Bains</h1>
+                    <p class="small-text tracking-wide" style="margin-top: 15px; margin-bottom: 20px;">WE WOULD LIKE TO INVITE YOU TO<BR>CELEBRATE WITH US THE MOST<br> SPECIAL DAY OF OUR LIVES.</p>
+                </div>
+                
+                <!-- Scroll Indicator Bar -->
+                <div class="scroll-indicator-container" style="margin-top: 0; margin-bottom: 120px;">
+                    <div class="scroll-indicator-bar"></div>
+                    <span class="scroll-indicator-text">scroll</span>
+                </div>
+            </div>
+
+            <div class="bismillah-frame-wrapper">
+                <div class="bismillah-text-container">
+                    
+                    <p class="details-text" style="margin-bottom: 0; line-height: 1.8; font-size: 0.65rem; font-family: 'Cormorant Garamond', serif; font-weight: 600; letter-spacing: 2px;">Waheguru Ji Ka Khalsa<br>Waheguru Ji Ki Fateh</p>
+                </div>
+            </div>
+
+            <p class="details-text" style="margin-bottom: 30px; line-height: 1.8;">
+              Sardar. Prabhjot Singh &<br> Sardarni. Sukhvinder Kaur <br>Brother of Prabhleen Kaur,<br>Prabhasees Kaur and Brahmjot Kaur<br><br>
+cordially invites your gracious presence with family on the auspicious occasion of the Engagement of <br><br>
+
+                <b style="font-size: 1.05rem;">Prabhmeet Singh</b><br>
+
+                <span style="display:block; text-align:center;">
+                         </span>
+
+                <br>with<br><br><br><b style="font-size: 1.05rem;">Simran Kaur Bains</b><br><br>
+
+                <span style="display:block; text-align:center;">
+                    D/o Sardar. Daljit Singh Bains &<br> Sardarni. Rajwant Kaur Bains       </span>
+            </p>
+            <img src="assests/images/fl.png" alt="Ring" class="ringg-image" style="margin: 0 auto;">
+        </div>
+    </section>
+
+    <!-- Scratch Page Section -->
+    <section class="scratch-section">
+        <div class="content-wrapper scroll-animate">
+            <p class="reveal-text">Reveal</p>
+            <p class="discover-text">SCRATCH TO<br>DISCOVER THE DATE</p>
+
+            <div class="scratch-container">
+                <div class="scratch-card">
+                    <div class="scratch-base"><span class="scratch-date">11</span></div>
+                    <canvas class="scratch-canvas" width="90" height="90"></canvas>
+                </div>
+                <div class="scratch-card">
+                    <div class="scratch-base"><span class="scratch-date">OCT</span></div>
+                    <canvas class="scratch-canvas" width="90" height="90"></canvas>
+                </div>
+                <div class="scratch-card">
+                    <div class="scratch-base"><span class="scratch-date">2026</span></div>
+                    <canvas class="scratch-canvas" width="90" height="90"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="venue-section">
+        <div class="venue-container scroll-animate">
+            <img src="assests/images/SAVE.png" class="save-image" alt="Save The Date">
+            
+            <!-- Minimal Countdown Section -->
+            <div class="minimal-countdown" style="margin-bottom: 50px;">
+                <p style="font-family: 'Marquis', serif; font-style: italic; font-size: 1.9rem; color: var(--text-primary); margin-bottom: 15px;">Days to Go...</p>
+
+                <div class="timer" style="margin-top: 15px; gap: 20px;">
+                    <div class="time-block-minimal">
+                        <span id="days">00</span>
+                        <p>Days</p>
+                    </div>
+                    <div class="time-block-minimal">
+                        <span id="hours">00</span>
+                        <p>Hours</p>
+                    </div>
+                    <div class="time-block-minimal">
+                        <span id="minutes">00</span>
+                        <p>Minutes</p>
+                    </div>
+                    <div class="time-block-minimal">
+                        <span id="seconds">00</span>
+                        <p>Secs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Itinerary Section -->
+    <section class="itinerary-section">
+        <div class="content-wrapper scroll-animate">
+            <h2 class="venue-title" style="margin-bottom: 20px; font-size: 2.2rem; font-family: 'Marquis', serif; font-style: italic; font-weight: normal;"> Engagement</h2>
+            
+            <div style="text-align: center; margin: 30px auto;">
+                <p class="timeline-time" style="font-family: 'Montserrat', sans-serif; font-size: 1.4rem; color: var(--text-primary);  letter-spacing: 1px; margin-bottom: 0;">17:00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Section -->
+    <section class="venue-section">
+        <div class="venue-container scroll-animate">
+            <h2 class="venue-title" style="font-size: 2rem; margin-bottom: 25px;">Venue</h2>
+
+            <div class="venue-image-box">
+                <a href="https://maps.app.goo.gl/yKrNafwThaMLiwcv8?g_st=ic" target="_blank" rel="noopener noreferrer">
+                    <img src="assests/images/venue.png" alt="Venue Image">
+                </a>
+                <p class="venue-text" style="font-size: 0.75rem; margin-top: 12px; font-weight: 600; color: var(--text-primary);">
+                    ▲ Click on the venue to see the location in Google Map
+                </p>
+            </div>
+
+            <p class="venue-text" style="font-size: 1.1rem; margin-top: 25px; font-weight: 600; line-height: 1.6; color: var(--text-primary);">
+               <br>
+
+            </p>
+        </div>
+    </section>
+
+    <section class="rsvp-section" id="rsvpSection">
+        <div class="scroll-animate">
+            <h2 class="rsvp-title">RSVP</h2>
+            <p class="rsvp-sub">Will you be attending?</p>
+            <div class="rsvp-buttons">
+                <button class="rsvp-btn yes" id="yesBtn">Yes, I'll be there!</button>
+                <button class="rsvp-btn no" id="noBtn">Sorry, I can't make it</button>
+            </div>
+            <p class="rsvp-message" id="rsvpMessage"></p>
+        </div>
+    </section>
+
+    <section class="thankyou-section">
+        <div class="thankyou-container scroll-animate">
+            <div class="guest-message-block">
+                <p class="guest-message-label">With heartfelt gratitude</p>
+                
+                <p class="guest-message-text">
+                    Your presence, love, and blessings make this celebration truly special.<br>
+                    We are honored to share this joyful occasion with you.
+                </p>
+            </div>
+            <img src="assests/images/bl-fl.png" alt="Ring" class="bl" style="margin: 0 auto;">
+        </div>
+    </section>
+
+    <div class="branding-bar" style="background-color: transparent; padding: 25px 15px; text-align: center; border: none !important;">
+        <a href="https://www.instagram.com/leora.invite/" target="_blank" rel="noopener noreferrer"
+            style="text-decoration: none; color: var(--text-primary); font-family: 'Montserrat', sans-serif; font-size: 0.75rem; letter-spacing: 1.5px; opacity: 0.8;">
+            created with love - team.leora
+        </a>
+    </div>
+
+    <script src="script.js?v=6"></script>
+</body>
+
+</html>
